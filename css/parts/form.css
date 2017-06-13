@@ -1,0 +1,127 @@
+/*Form*/
+.form {
+
+}
+.form__text{
+    margin-top: 0;
+    padding: 2px 2px 0 50px;
+    position: relative;
+    border-radius: 3px;
+    background-color: #3c4955;
+}
+.form__text:not(.form__text--message){
+    height: 50px;
+}
+.form__text:after{
+    content: '';
+    width: 0;
+	height: 0;
+    position: absolute;
+    top:calc(50% - 7.5px);
+    left:50px;
+	border-top: 7.5px solid transparent;
+	border-left: 15px solid #3c4955;
+	border-bottom: 7.5px solid transparent;
+    
+}
+.form__text--name {
+	width: 46%;
+	float: left;
+}
+.form__text--name:before {
+    font-family:'FontAwesome';
+    position:absolute;
+    content: "\f007";
+    width:22px;
+    height:22px;
+    font-size:22px;
+    top:calc(50% - 13px);
+    left:calc(50px - 36px);
+    color:white;
+    line-height: 22px;
+}
+
+.form__text--email {
+	width: 46%;
+	float: right;
+    line-height: 0;
+}
+.form__text--email:before{
+    font-family:'FontAwesome';
+    position:absolute;
+    content: "\f0e0";
+    width:22px;
+    height:22px;
+    font-size:22px;
+    top:calc(50% - 13px);
+    left:calc(50px - 33px);
+    color:white;
+    line-height: 22px;
+}
+.form__input{
+    width: 100%;
+    height: 46px;
+    padding: 0 22px;
+}
+.form__input:focus{
+    outline:none;
+}
+.form__input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #a6a5a5;;
+}
+.form__input::-moz-placeholder { /* Firefox 19+ */
+  color: #a6a5a5;;
+}
+.form__input:-ms-input-placeholder { /* IE 10+ */
+  color: #a6a5a5;;
+}
+.form__input:-moz-placeholder { /* Firefox 18- */
+  color: #a6a5a5;;
+}
+
+.form__text--message {
+    height: 228px;
+    width: 100%;
+	clear: both;
+}
+.form__text--message:after{
+    top:18px;
+}
+.form__icon{
+    position: absolute;
+    left:14px;
+    width:22px;
+    height:22px;
+    font-size:22px;
+    color: white;
+    top: 15px;
+    
+}
+.form__textaria{
+    width: 100%;
+    height: 224px;
+    padding: 16px 22px;
+    resize: none;
+}
+.form__textaria:focus{
+    outline: none;
+}
+
+.form__btn {
+	width: 100%;
+    height: 50px;
+	display: block;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 25px;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 3px;
+	outline: none;
+	background-color: #48bf72;
+}
+
+.form__btn:hover{
+	cursor: pointer;
+}
